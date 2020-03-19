@@ -1,4 +1,4 @@
-## Welcome to the Water and Landscape Dynamics group's page for coding matters
+## Welcome to the Water and Landscape Dynamics group's page for all coding matters
 
 This page contains common coding examples and instructions for processing and environmental data using programming languages and the National Computational Infrastructure.
 
