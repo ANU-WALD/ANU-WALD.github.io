@@ -6,19 +6,19 @@ categories: [gdal]
 
 ## Description
 
-GDAL is a C++ library which also offers a series of command line tools for reading and converting multiple raster data formats. On the NCI there are several version of GDAL available. To load GDAL you'll need to type:
+GDAL is a C++ library which also offers a series of command line tools for reading and converting between multiple raster data formats. On the NCI there are several version of GDAL available. To load GDAL you'll need to type:
 
 ```
-module load gdal
+$ module load gdal
 ```
 
 Or to load a specific version:
 
 ```
-module load gdal/2.2.2
+$ module load gdal/2.2.2
 ```
 
-GDAL is quite old and was designed to work with GeoTIFFs mainly. NetCDFs can also be used but the interface requires of a weird notation to make it work. The problem is that NetCDFs can contain multiple variables and we need to be explicit to GDAL about the variable that we refer in a NetCDF file. For example if we use `gdalinfo` to display the information of a flammability index NetCDF file on the NCI:
+GDAL is quite old and was originally designed to work mainly with GeoTIFFs. NetCDFs can also be used but the interface requires using a weird notation. The problem is that NetCDFs can contain multiple variables inside and we need to be explicit about the variable that we want GDAL to use. For example, if we use `gdalinfo` to display the information of a NetCDF from the Fuel Moisture Content (FMC) collection on the NCI:
 
 ```
 $ gdalinfo /g/data/ub8/au/FMC/c6/flam_c6_2001_h29v11.nc

@@ -10,7 +10,7 @@ If you have a file containing raster or vector geospatial data, is very likely t
 
 
 ```
-gdalinfo --formats
+$ gdalinfo --formats
 Supported Formats:
   VRT -raster- (rw+v): Virtual Raster
   DERIVED -raster- (ro): Derived datasets using VRT pixel functions
