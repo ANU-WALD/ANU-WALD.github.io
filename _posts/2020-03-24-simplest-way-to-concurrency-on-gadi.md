@@ -12,7 +12,7 @@ The basic setup for doing this requires a program that accepts input arguments (
 
 Imagine we have a collection of 100 NetCDF files in the `/g/data/xc0/tiles` directory, with names `00.nc` to `99.nc`. We want to compute the mean of the values in each file, saving the output to a text file, which would be `00.out` for the first file.
 
-This is the Python code to compute the mean and save the output, saved in a file named `compute_mean.py`:
+This is the Python code to compute the mean and save the output: `compute_mean.py`
 
 ```
 import xarray as xr
@@ -37,7 +37,7 @@ To compute the mean of file `44.nc` we would do:
 $ python compute_mean.py -fname 44.nc
 ```
 
-Imagine that executing this code takes one hour and we want to use the supercomputer. We can write the following PBS script, with name `gadi_mean.pbs`:
+Imagine that executing this code takes one hour and we want to use the supercomputer. We can write the following PBS script: `gadi_mean.pbs`
 
 ```
 #!/bin/bash
@@ -68,4 +68,6 @@ for tile in tiles:
     os.system('qsub -v "fname={}" gadi_mean.pbs'.format(tile))
 ```
 
-Running this code will submit 100 jobs to Gadi and we will have effectivily achieved to run our code in parallel. If you want to try this be carefull with the resources that you request and always test your code before sending jobs to Gadi (printing instead of calling os.system() is a good way). An error in this last script could result in thousands of jobs being submitted and no allocation for the rest of the group.
+Running this code will submit 100 jobs to Gadi and we will have effectivily achieved to run our code in parallel. 
+
+**If you want to try this be carefull with the resources that you request and always test your code before sending jobs to Gadi (printing instead of calling `os.system()` is one way of testing the code). An error in this last script could result in thousands of jobs being submitted and no allocation for the rest of the group.**
