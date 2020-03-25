@@ -31,7 +31,7 @@ This is a work in progress and we are still trying to work out the best structur
 </ul>
 
 
-<!--
+<!---
 {% for category in site.categories %}
   <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}</h3>
   <ul>
