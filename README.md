@@ -30,8 +30,7 @@ This is a work in progress and we are still trying to work out the best structur
   {% endfor %}
 </ul>
 
-
-<!---
+{% comment %} 
 {% for category in site.categories %}
   <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}</h3>
   <ul>
@@ -47,7 +46,7 @@ This is a work in progress and we are still trying to work out the best structur
     {% assign group = nil %}
   </ul>
 {% endfor %}
---/>
+{% endcomment %}
 
 ### Support or Contact
 
