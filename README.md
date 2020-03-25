@@ -4,24 +4,6 @@ This page contains common coding examples and instructions for processing and en
 
 This is a work in progress and we are still trying to work out the best structure and format to make our materials public.
 
-### Sections
-
-- Using Gadi
-- GDAL
-- CDO
-- Python
-
-### Recent Posts
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-
 ### Categories
 
 <ul>
@@ -38,6 +20,18 @@ This is a work in progress and we are still trying to work out the best structur
 {% assign categories_list = nil %}
 </ul>
 
+### Recent Posts
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+<!--
 {% for category in site.categories %}
   <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}</h3>
   <ul>
@@ -53,7 +47,7 @@ This is a work in progress and we are still trying to work out the best structur
     {% assign group = nil %}
   </ul>
 {% endfor %}
-
+--/>
 
 ### Support or Contact
 
