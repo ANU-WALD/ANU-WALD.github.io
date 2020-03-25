@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data intensive jobs on Gadi - Storage options
+title: Data intensive jobs on Gadi - storage options
 categories: [gadi,nci]
 ---
 
