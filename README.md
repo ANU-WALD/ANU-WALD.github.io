@@ -33,7 +33,7 @@ This is a work in progress and we are still trying to work out the best structur
 {% endcomment %} 
 
 {% for category in site.categories %}
-  <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category.size }})</h3>
+  <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</h3>
   <ul>
     {% assign pages_list = category[1] %}
     {% for post in pages_list %}
