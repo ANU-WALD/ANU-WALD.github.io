@@ -4,8 +4,19 @@ This page contains common coding examples and instructions for processing and en
 
 This is a work in progress and we are still trying to work out the best structure and format to make our materials public.
 
+### Recent Posts
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 ### Categories
 
+{% comment %} 
 <ul>
 {% assign categories_list = site.categories %}
   {% if categories_list.first[0] == null %}
@@ -19,9 +30,10 @@ This is a work in progress and we are still trying to work out the best structur
   {% endif %}
 {% assign categories_list = nil %}
 </ul>
+{% endcomment %} 
 
 {% for category in site.categories %}
-  <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}</h3>
+  <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ site.tags[category].size }})</h3>
   <ul>
     {% assign pages_list = category[1] %}
     {% for post in pages_list %}
@@ -35,15 +47,7 @@ This is a work in progress and we are still trying to work out the best structur
     {% assign group = nil %}
   </ul>
 {% endfor %}
-### Recent Posts
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
 
 {% comment %} 
 {% for category in site.categories %}
