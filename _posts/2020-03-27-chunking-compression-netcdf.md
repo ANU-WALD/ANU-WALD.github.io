@@ -40,16 +40,16 @@ float fmc_stdv(time, latitude, longitude) ;
 
 The attributes on the `fmc_stdv` variable tell us that this file is using compression `_DeflateLevel = 4`, the number indicating the level of compression in a [0-9] scale. See at the end of this post how to apply compression to a NetCDF using the `nccopy` tool.
 
-The previous file has also some more information telling us that the file using chunking. Chunking allows us to divide our file in smaller cubes, called chunks, and apply compression to each of them individually. The benefit of using chunking is that when reading a subset of the NetCDF, we won't need to decompress the entire file, just the chunks that contain our query, improving the reading time significatly specially when reading small parts. Chunking and compression are quite interesting concepts and quite tricky to get them right -- choosing the right size for your chunks really depends on the data and type of queries that the files are intended to receive. We just want to cover the basics of this functionality and flag that you can use this functionality if one day you notice that your NetCDFs are becoming too large or slow.
+The previous file has also some more information telling us that the file uses chunking `_Storage = "chunked"` and the size of these chunks `_ChunkSizes = 1, 340, 410`. Chunking allows us to divide a file in smaller cubes, called chunks, and apply compression to each of them individually. The benefit of using chunking is that, when reading a subset of the NetCDF, we won't need to decompress the entire file, just the chunks that contain our query. Chunking can improve the read time of a file significatly, specially when reading small subsets. Chunking and compression are quite interesting concepts and is tricky to get them right -- choosing the right size for your chunks really depends on the data and type of queries that the files are intended to receive. We just want to cover the basics of this functionality and flag that you can use this functionality if one day you notice that your NetCDFs are becoming too large or slow.
 
-Finally, `nccopy` is a tool available on the NCI for applying compression and chunking to NetCDF files and convert files between NetCDF versions. For example, to apply compression to a NetCDF file we can do:
+Finally, `nccopy` is a tool available on the NCI systems for applying compression and chunking to NetCDF files and converting files between NetCDF versions. For example, to apply compression to a NetCDF file we can do:
 
 ```
 $ module load netcdf
 $ nccopy -d 4 input.nc output.nc
 ```
 
-Here is the help documentation for `nccopy` where all the options are listed:
+Here is the help documentation for `nccopy` where all the options for creating performant NetCDFs are listed:
 
 ```
 nccopy [-k output_kind] [-d level] [-s] [-c chunkspec]
