@@ -69,7 +69,7 @@ This is a work in progress and we are still trying to work out the best structur
 
 ### Support or Contact
 
-Want to collaborate developing or contributing new materials to this page? Contact me pablo.larraondo (at) anu.edu.au
+Want to collaborate developing or contributing new materials to this page? Contact me at: pablo.larraondo (at) anu.edu.au or ANU WALD Slack channel.
 
 
 Curious about how to reproduce this page's logo? See [here](https://gist.github.com/prl900/915fdbcaf977b882e3ac0a82fc7276bd)
