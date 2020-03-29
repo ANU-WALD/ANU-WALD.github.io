@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monitoring our project's inodes (number of files) usage on the NCI.
+title: Monitoring NCI's project inodes (number of files) usage.
 categories: [nci]
 ---
 

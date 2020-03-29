@@ -10,7 +10,7 @@ Sometimes, when using the VDI, we just need a terminal window and we don't need 
 
 ![vdi_screenshot](https://github.com/ANU-WALD/ANU-WALD.github.io/raw/master/files/vdi_screenshot.png)
 
-At the top of the window, you can see there is a code `vdi-n28` which identifies this machine. Each time we start a new VDI instance we'll be given a different machine with code `vdi-n[XX]`, so you'll need to look this up each time you want to connect. For connecting to this VDI instance you'll need to type this on your local terminal:
+At the top of the window, you can see there is a code `vdi-n28` which identifies this machine. Each time we start a new VDI instance we'll be given a different machine with code `vdi-n[XX]`, so you'll need to look this up every time you create a VDI instance. For connecting to this VDI instance you'll need to type this on your local terminal:
 
 ```
 $ ssh pl5189@vdi-n28.nci.org.au
