@@ -1,6 +1,6 @@
 ## Welcome to the Water and Landscape Dynamics group's page for all coding matters
 
-This page contains common coding examples and instructions for processing and environmental data using programming languages, command line tools and the National Computational Infrastructure.
+This page contains common coding examples and instructions for processing environmental data using programming languages, command line tools targeting the National Computational Infrastructure.
 
 This is a work in progress and we are still trying to work out the best structure and format to make our materials public.
 
