@@ -6,7 +6,7 @@ categories: [nci,gadi]
 
 ## Description
 
-NCI organises users and data by projects. Users belonging to the same project can easily share files using the space under `/g/data/proj_code`. However, sometimes we need to share a file with other NCI users with no project in common. For this cases, Gadi has a dedicated place on the file system where all the NCI users can access, read and write. This location is `/scratch/public` and we can all copy files and create directories there for sharing them with colleagues. The Linux permission rules for the files and directories created there apply the same way so remember to `chmod` to the appropriate access level using the desired combination of ([u]ser, [g]roup, [a]ll) and ([r]ead, [w]rite, e[x]ecute).
+NCI organises users and data by projects. Users belonging to the same project can easily share files using the space under `/g/data/proj_code`. However, sometimes we need to share files with other NCI users with no project in common. For this cases, Gadi has a dedicated place on the file system which all NCI users can access (read and write). This location is `/scratch/public` and we can all copy create directories and move files there for sharing data with colleagues. We can restrict the visibility of the files and directories created in this space using the Linux file system rules, so remember to `chmod` to the appropriate access level using the desired combination of ([u]ser, [g]roup, [a]ll) and ([r]ead, [w]rite, e[x]ecute).
 
 Here is a copy of the `README` file in this location which explains its intended use and data policies applied.
 
