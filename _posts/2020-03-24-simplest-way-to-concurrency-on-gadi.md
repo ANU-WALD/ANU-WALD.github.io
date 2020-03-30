@@ -68,6 +68,6 @@ for tile in tiles:
     os.system('qsub -v "fname={}" gadi_mean.pbs'.format(tile))
 ```
 
-Running this code will submit 100 jobs to Gadi and we will have effectivily achieved to run our code in parallel. 
+Running this code will submit 100 jobs to Gadi and we will have effectively achieved running our code in parallel. 
 
 **If you want to try this be carefull with the resources that you request and always test your code before sending jobs to Gadi (printing instead of calling `os.system()` is one way of testing the code). An error in this last script could result in thousands of jobs being submitted and no allocation for the rest of the group.**
