@@ -34,7 +34,7 @@ matlab -r -nodisplay -nojvm 'process_biomass(2019)';
 matlab -r -nodisplay -nojvm 'process_biomass(2020)';
 ```
 
-Now we can call the commands in this file using the `conc_exec` program for running in parallel:
+Now, we can call the commands in this file using the `conc_exec` program for running in parallel:
 
 ```
 $ ./conc_exec -f input.txt -c 4
