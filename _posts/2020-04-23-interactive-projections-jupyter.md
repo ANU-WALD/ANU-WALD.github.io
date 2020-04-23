@@ -9,6 +9,41 @@ categories: [python]
 ### This first cell defines the map where will draw the boxes with the coordinates we want to reproject.
 
 
+```python
+from ipyleaflet import Map, basemaps, basemap_to_tiles, DrawControl
+import geojson
+
+def bbox(coord_list):
+     box = []
+     for i in (0,1):
+         res = sorted(coord_list, key=lambda x:x[i])
+         box.append((res[0][i],res[-1][i]))
+ 
+     return box[0][0]-360, box[1][0], box[0][1]-360, box[1][1]
+    
+
+watercolor = basemap_to_tiles(basemaps.Stamen.Watercolor)
+
+m = Map(layers=(watercolor, ), center=(-25, 140), zoom=4)
+
+draw_control = DrawControl(circle={}, circleMarker={}, circlemarker={}, 
+                           CircleMarker={}, polyline={}, marker={}, polygon={},
+                          rectangle = {"shapeOptions": {"color": "#00005d","fillOpacity": 0.0}})
+
+
+def handle_draw(self, action, geo_json):
+    #self.clear()
+    lon_min.value,lat_min.value,lon_max.value,lat_max.value=bbox(list(geojson.utils.coords(geo_json['geometry'])))
+    x_min.value,y_min.value=transform(lon_min.value,lat_min.value)
+    x_max.value,y_max.value=transform(lon_max.value,lat_max.value)
+    
+draw_control.on_draw(handle_draw)
+
+m.add_control(draw_control)
+
+m
+```
+
 <html><head>
 
 
@@ -6811,7 +6846,7 @@ categories: [python]
     "model_id": "bc32bee6364c4044a35a28120201472d"
 }
 </script>
-
+AAAAAAAAAAAAAAAAAAAAAA
 <script type="application/vnd.jupyter.widget-view+json">
 {
     "version_major": 2,
