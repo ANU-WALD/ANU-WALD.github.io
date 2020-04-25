@@ -4,6 +4,8 @@ title:  Interactive Jupyter notebook for coordinates transformation
 categories: [python]
 ---
 
+# This is a work in progress. I'm trying to find a way to render a Jupuyter notebook as an HTML page keeping the interactive functionality.
+
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
