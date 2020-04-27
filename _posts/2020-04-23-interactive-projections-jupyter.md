@@ -5,13 +5,13 @@ categories: [python]
 ---
 
 ## Description
-
+<br>
 Sometimes you need to calculate a set of bounding boxes around different parts of the world using a specific coordinate projection system. There are a number of tools that allow drawing boxes interactively in geographical coordinates (lat, lon) using a web page, such as [geojson.io](http://geojson.io). However, I don't know an easy way of converting or defining bounding boxes in other geographical projections. Probably GIS systems provide the right functionality to do this easily, but this is also about experimenting with interactive Jupyter notebooks and create this functionality.
-
+<br>
 The following notebook demonstrates how to draw boxes in a map interactively, which can then be converted into any coordinate reference system. This page contains a rendered copy of the notebook but to test this you'll need to run a Jupyter notebook session. A copy of this notebook can be downloaded from [here](https://gist.github.com/prl900/44ae91df0168ba0c5f7bf72da084a7f8).
-
+<br>
 Interactive widgets in Jupyter notebooks allow us to make our code interactive. I'm sure this notebook can be extended and improved to make it more intuitive and interactive. Let us know if you find a way of improving this or something interesting.
-
+<br>
 
 <html>
 <head><meta charset="utf-8" />
