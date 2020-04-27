@@ -6,11 +6,11 @@ categories: [python]
 
 ## Description
 
-For some work that I'm doing I need to calculate a set of bounding boxes around different parts of Australia in a specific coordinate projection system. There are a number of tools that allow drawing boxes interactively in geographical coordinates (lat, lon) using a web page, such as [geojson.io](http://geojson.io). However, I don't know an easy way of converting or defining bounding boxes in other projections. Probably GIS systems would provide the right functionality to do this easily but I wanted to experiment with interactive Jupyter notebooks to create this functionality.
+Sometimes you need to calculate a set of bounding boxes around different parts of the world using a specific coordinate projection system. There are a number of tools that allow drawing boxes interactively in geographical coordinates (lat, lon) using a web page, such as [geojson.io](http://geojson.io). However, I don't know an easy way of converting or defining bounding boxes in other geographical projections. Probably GIS systems provide the right functionality to do this easily, but this is also about experimenting with interactive Jupyter notebooks and create this functionality.
 
-The following notebook demonstrates how to draw boxes in a map interactively, which can then be converted into the desired coordinate system. This page contains a rendered notebook but to test this you'll need to run a Jupyter notebook session. A copy of this notebook can be downloaded from [here](https://gist.github.com/prl900/44ae91df0168ba0c5f7bf72da084a7f8).
+The following notebook demonstrates how to draw boxes in a map interactively, which can then be converted into any coordinate reference system. This page contains a rendered copy of the notebook but to test this you'll need to run a Jupyter notebook session. A copy of this notebook can be downloaded from [here](https://gist.github.com/prl900/44ae91df0168ba0c5f7bf72da084a7f8).
 
-Interactive widgets in Jupyter notebooks allow for functionality to make your code interactive. I'm sure this notebook can be extended and improved to make it more graphical and interactive. Let us know if you find something interesting.
+Interactive widgets in Jupyter notebooks allow us to make our code interactive. I'm sure this notebook can be extended and improved to make it more intuitive and interactive. Let us know if you find a way of improving this or something interesting.
 
 
 <html>
