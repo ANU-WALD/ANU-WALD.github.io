@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Command for keeping an eye on NCI storage allocations
+title:  Commands for keeping an eye on NCI storage allocations
 categories: [nci, gadi]
 ---
 
