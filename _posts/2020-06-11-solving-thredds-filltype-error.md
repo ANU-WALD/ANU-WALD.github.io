@@ -24,5 +24,5 @@ This is apparently a common and known problem related to Thredds configuration a
 ds = xr.open_dataset("http://dapds00.nci.org.au/thredds/dodsC/ub8/au/LandCover/OzWALD_LC/WCF_2018_mosaic_AustAlb_25m.nc#fillmismatch")
 ```
 
-Notice the `#fillmismatch` at the end of the url which fixes the problem. Here is the [link](https://github.com/Unidata/netcdf-c/issues/1299#issuecomment-458312804) to the original threads one of the thredds developers explains the problem and fix.
+Notice the `#fillmismatch` at the end of the url which fixes the problem. Here is the [link](https://github.com/Unidata/netcdf-c/issues/1299#issuecomment-458312804) to the original discussion where one of the thredds developers explains the problem and how to fix it.
 
