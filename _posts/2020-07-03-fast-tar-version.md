@@ -29,5 +29,5 @@ I was able to run this command in less than 30 minutes and I reckon the resultin
 And if you want to decompress or recover the tarred directory:
 
 ```
-lz4 -dc blob.tar
+lz4 -dc blob.tar.lz4
 ```
